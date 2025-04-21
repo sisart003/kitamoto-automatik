@@ -1,7 +1,7 @@
-import openpyxl
+import openpyxl, pprint
 from openpyxl.utils import get_column_letter, column_index_from_string
-wb = openpyxl.load_workbook("Book1.xlsx")
-sheet = wb['Sheet3']    # The sheet we want to work with
+# wb = openpyxl.load_workbook("Book1.xlsx")
+# sheet = wb['Sheet3']    # The sheet we want to work with
 # print(type(wb))
 # print(wb.sheetnames) # The workbook's sheets' names
 # print(sheet)
@@ -30,5 +30,6 @@ sheet = wb['Sheet3']    # The sheet we want to work with
 #     print('--- End of Row ---');
 
 # print(list(sheet.columns)[1])
-for cellObj in list(sheet.columns)[2]:
-    print(cellObj.value) # Get the value of the cell in the second column
+# for cellObj in list(sheet.columns)[2]:
+#     print(cellObj.value) # Get the value of the cell in the second column
+
